@@ -45,7 +45,7 @@ class EEGImage(data.Dataset):
 if __name__ == '__main__':
     dataset = EEGImage("/home/liusheng/Dataset/EEG/train.h5", 'train')
     print len(dataset)
-    label, video = dataset.__getitem__(0)
+    label, video = dataset[0]
     print label
     print video.shape
 
